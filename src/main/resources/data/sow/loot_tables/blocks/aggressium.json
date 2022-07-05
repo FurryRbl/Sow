@@ -1,0 +1,19 @@
+{
+"type": "minecraft:block",
+"pools": [
+  {
+    "rools": 1,
+    "entries": [
+      {
+        "type": "minecraft:block",
+        "name": "sow:aggressium"
+      }
+    ],
+    "conditions": [
+      {
+        "type": "minecraft:survives_explosion"
+      }
+    ]
+  }
+]
+}
