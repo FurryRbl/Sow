@@ -12,7 +12,7 @@ import static net.minecraft.item.Items.IRON_INGOT;
 public class Axe_Stubby implements ToolMaterial {
 
     public static final Axe_Stubby INSTANCE = new Axe_Stubby();
-    public static final ToolItem AXE_STUBBY = new SwordItem(INSTANCE, 0, 0 , new Item.Settings().group(SOW_GROUP)); // 定义一个新的斧
+    public static final ToolItem AXE_STUBBY = new SwordItem(INSTANCE, 2, 0.5F, new Item.Settings().group(SOW_GROUP)); // 定义一个新的斧
 
     public int getDurability() { //耐久
         return 512;
@@ -23,7 +23,7 @@ public class Axe_Stubby implements ToolMaterial {
     }
 
     public float getAttackDamage() { // 攻击伤害
-        return 10.0f;
+        return 5.0F;
     }
 
     public int getMiningLevel() { // 挖掘等级

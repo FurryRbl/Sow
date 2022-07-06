@@ -32,6 +32,8 @@ bin/
 
 run/
 
-# Blender
-
 *.blend1
+
+/resources/Songs/*/images/
+/resources/Songs/*/result.png
+

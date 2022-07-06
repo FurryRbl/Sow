@@ -20,7 +20,10 @@
   "entrypoints": {
     "main": [
       "com.sharpice.sow.Mod"
-    ]
+    ],
+    "client": [],
+    "server": [],
+    "preLaunch": []
   },
   "mixins": [
     "sow.mixins.json"
