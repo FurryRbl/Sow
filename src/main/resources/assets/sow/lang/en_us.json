@@ -1,4 +1,7 @@
 {
+  "itemGroup.sow.sow_group": "Songs of war",
   "item.sow.axe_stubby": "Axe Stubby",
-  "itemGroup.sow.sow_group": "Songs of war"
+  "item.sow.dagger_stone": "Dagger Stone",
+  "item.sow.dagger_diamond": "Dagger Diamond",
+  "item.sow.sword1_iron": "Sword1 Iron"
 }
