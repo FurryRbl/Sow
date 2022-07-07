@@ -13,7 +13,7 @@ public class sword1_iron {
     public static final ToolItem SWORD1_IRON = new SwordItem(INSTANCE, 1, 1.8F, new Item.Settings().group(SOW_GROUP)); // 定义一个新的斧
 
     public int getDurability() { //耐久
-        return 1000;
+        return 200;
     }
 
     public float getMiningSpeedMultiplier() { // 挖掘速度
@@ -21,7 +21,7 @@ public class sword1_iron {
     }
 
     public float getAttackDamage() { // 攻击伤害
-        return 1.0F;
+        return 2.0F;
     }
 
     public int getMiningLevel() { // 挖掘等级
