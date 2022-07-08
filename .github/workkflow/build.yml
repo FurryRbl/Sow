@@ -1,0 +1,30 @@
+name: build
+on: [ push ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: 准备存储库
+        uses: actions/checkout@v2
+      - name: 设置JDK17
+        uses: actions/jdk@v3
+        with:
+          jdk_version: "17"
+          distribution: "temurin"
+      - name: 设置Gradle
+        uses: gradle/wrapper-validate@v1
+      - name: 设置gradlew文件权限
+        run: chmod +x ./gradlew
+      - name: 构建
+        run: ./gradlew build
+      - name: 上传构建资源
+        uses: actions/upload-artifact@v1
+        witch:
+          name: Build_Jar
+          path: build/libs/

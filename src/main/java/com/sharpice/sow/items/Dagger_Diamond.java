@@ -1,19 +1,20 @@
 package com.sharpice.sow.items;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolItem;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 import static com.sharpice.sow.Group.SOW_GROUP;
-import static net.minecraft.item.Items.IRON_INGOT;
 
-public class sword1_iron {
+public class Dagger_Diamond implements ToolMaterial {
     public static final Axe_Stubby INSTANCE = new Axe_Stubby();
-    public static final ToolItem SWORD1_IRON = new SwordItem(INSTANCE, 1, 1.8F, new Item.Settings().group(SOW_GROUP)); // 定义一个新的斧
+    public static final ToolItem DAGGER_DIAMOND = new SwordItem(INSTANCE, 1, 1.8F, new Item.Settings().group(SOW_GROUP)); // 定义一个新的斧
 
     public int getDurability() { //耐久
-        return 200;
+        return 1000;
     }
 
     public float getMiningSpeedMultiplier() { // 挖掘速度
@@ -21,7 +22,7 @@ public class sword1_iron {
     }
 
     public float getAttackDamage() { // 攻击伤害
-        return 2.0F;
+        return 1.0F;
     }
 
     public int getMiningLevel() { // 挖掘等级
@@ -33,6 +34,6 @@ public class sword1_iron {
     }
 
     public Ingredient getRepairIngredient() { // 修复材料
-        return Ingredient.ofItems(IRON_INGOT);
+        return Ingredient.ofItems(Blocks.COBBLESTONE);
     }
 }
