@@ -18,7 +18,7 @@ jobs:
           jdk_version: "17"
           distribution: "temurin"
       - name: 设置Gradle
-        uses: gradle/wrapper-validate@v1
+        uses: gradle/wrapper-validation-action@v1
       - name: 设置gradlew文件权限
         run: chmod +x ./gradlew
       - name: 构建
