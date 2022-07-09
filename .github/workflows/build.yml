@@ -26,5 +26,5 @@ jobs:
       - name: 上传构建资源
         uses: actions/upload-artifact@v1
         with:
-          name: Build_Jar
+          name: Mod
           path: build/libs/

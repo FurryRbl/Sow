@@ -33,7 +33,8 @@
     "fabricloader": ">=0.14.8",
     "fabric": "*",
     "minecraft": "~1.18.2",
-    "java": ">=17"
+    "java": ">=17",
+    "shimmer": "*"
   },
   "suggests": {
     "another-mod": "*"

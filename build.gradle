@@ -11,6 +11,12 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
+	maven {
+		url "https://maven.firstdarkdev.xyz/snapshots"
+	}
+	maven {
+		url "https://cfa2.cursemaven.com"
+	}
 }
 
 dependencies {
@@ -18,6 +24,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	implementation "com.lowdragmc.shimmer:Shimmer-fabric-1.18.2:0.1.1"
 }
 
 processResources {
@@ -48,7 +55,6 @@ publishing {
 			from components.java
 		}
 	}
-
 	repositories {
 	}
 }
