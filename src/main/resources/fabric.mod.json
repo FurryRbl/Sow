@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "sow",
+  "version": "${version}",
+
+  "name": "Sow",
+  "description": "Songs of War Mod developed by the community",
+  "authors": [
+    "SharpIce"
+  ],
+  "contact": {
+    "homepage": "https://github.com/FurryRbl/Sow",
+    "sources": "https://github.com/FurryRbl/Sow"
+  },
+
+  "license": "MIT",
+  "icon": "assets/sow/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.sharpice.sow.Mod"
+    ],
+    "client": [],
+    "server": [],
+    "preLaunch": []
+  },
+  "mixins": [
+    "sow.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.18.2",
+    "java": ">=17",
+    "trinkets": "*",
+    "geckolib3": "*"
+  },
+  "suggests": {
+    "lambdynlights": "*"
+  }
+}
